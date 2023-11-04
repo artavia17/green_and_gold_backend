@@ -816,6 +816,36 @@ export interface ApiHomeSliderHomeSlider extends Schema.CollectionType {
   };
 }
 
+export interface ApiServiceService extends Schema.SingleType {
+  collectionName: 'services';
+  info: {
+    singularName: 'service';
+    pluralName: 'services';
+    displayName: 'Service';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    All_Services: Attribute.Component<'all-services.all-services', true>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::service.service',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::service.service',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 declare module '@strapi/types' {
   export module Shared {
     export interface ContentTypes {
@@ -836,6 +866,7 @@ declare module '@strapi/types' {
       'api::footer.footer': ApiFooterFooter;
       'api::home.home': ApiHomeHome;
       'api::home-slider.home-slider': ApiHomeSliderHomeSlider;
+      'api::service.service': ApiServiceService;
     }
   }
 }
