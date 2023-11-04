@@ -38,15 +38,21 @@
       "required": true
     },
     "Full_Management_Plus_Image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false,
-      "required": true
+      ]
+    },
+    "Full_Management_Plus_Button_Title": {
+      "type": "string"
+    },
+    "Full_Management_Plus_Button_Action": {
+      "type": "string"
     }
   }
 }

@@ -697,6 +697,8 @@ export interface ApiHomeHome extends Schema.SingleType {
     Full_Management_Plus_Title: Attribute.String & Attribute.Required;
     Full_Management_Plus_Content: Attribute.RichText & Attribute.Required;
     Full_Management_Plus_Image: Attribute.Media & Attribute.Required;
+    Full_Management_Plus_Button_Title: Attribute.String;
+    Full_Management_Plus_Button_Action: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
