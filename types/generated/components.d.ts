@@ -8,7 +8,6 @@ export interface PhonesPhones extends Schema.Component {
   };
   attributes: {
     Phone: Attribute.String;
-    Country_Code: Attribute.String;
     Country: Attribute.Enumeration<['CR', 'US']>;
   };
 }

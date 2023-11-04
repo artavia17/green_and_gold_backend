@@ -9,9 +9,6 @@
     "Phone": {
       "type": "string"
     },
-    "Country_Code": {
-      "type": "string"
-    },
     "Country": {
       "type": "enumeration",
       "enum": [
