@@ -12,11 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Caring_For_Your_Home_Title": {
-      "type": "string",
-      "required": true,
-      "private": true
-    },
     "Caring_For_Your_Home_Content": {
       "type": "richtext",
       "required": true
@@ -53,6 +48,10 @@
     },
     "Full_Management_Plus_Button_Action": {
       "type": "string"
+    },
+    "Caring_For_Your_Home_Title": {
+      "type": "string",
+      "required": true
     }
   }
 }

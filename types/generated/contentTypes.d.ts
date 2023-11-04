@@ -689,9 +689,6 @@ export interface ApiHomeHome extends Schema.SingleType {
     draftAndPublish: true;
   };
   attributes: {
-    Caring_For_Your_Home_Title: Attribute.String &
-      Attribute.Required &
-      Attribute.Private;
     Caring_For_Your_Home_Content: Attribute.RichText & Attribute.Required;
     Caring_For_Your_Home_Slider: Attribute.Media & Attribute.Required;
     Full_Management_Plus_Title: Attribute.String & Attribute.Required;
@@ -699,6 +696,7 @@ export interface ApiHomeHome extends Schema.SingleType {
     Full_Management_Plus_Image: Attribute.Media & Attribute.Required;
     Full_Management_Plus_Button_Title: Attribute.String;
     Full_Management_Plus_Button_Action: Attribute.String;
+    Caring_For_Your_Home_Title: Attribute.String & Attribute.Required;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
