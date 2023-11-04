@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_phones_phones",
+  "info": {
+    "displayName": "Phones",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Phone": {
+      "type": "string"
+    },
+    "Country_Code": {
+      "type": "string"
+    },
+    "Country": {
+      "type": "enumeration",
+      "enum": [
+        "CR",
+        "US"
+      ]
+    }
+  }
+}

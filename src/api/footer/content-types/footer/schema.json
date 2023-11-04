@@ -1,0 +1,28 @@
+{
+  "kind": "singleType",
+  "collectionName": "footers",
+  "info": {
+    "singularName": "footer",
+    "pluralName": "footers",
+    "displayName": "Footer",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Phone": {
+      "displayName": "Phones",
+      "type": "component",
+      "repeatable": true,
+      "component": "phones.phones"
+    },
+    "Email": {
+      "type": "string"
+    },
+    "Address": {
+      "type": "string"
+    }
+  }
+}
