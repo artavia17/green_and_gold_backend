@@ -16,7 +16,7 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      - name: Create the build
+      - name: Build
         run: npm run build
 
       - name: Deploy to FTP
