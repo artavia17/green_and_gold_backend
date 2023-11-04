@@ -12,7 +12,7 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Caring_For_Your_Home": {
+    "Caring_For_Your_Home_Title": {
       "type": "string",
       "required": true,
       "private": true

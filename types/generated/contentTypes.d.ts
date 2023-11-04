@@ -689,7 +689,7 @@ export interface ApiHomeHome extends Schema.SingleType {
     draftAndPublish: true;
   };
   attributes: {
-    Caring_For_Your_Home: Attribute.String &
+    Caring_For_Your_Home_Title: Attribute.String &
       Attribute.Required &
       Attribute.Private;
     Caring_For_Your_Home_Content: Attribute.RichText & Attribute.Required;
