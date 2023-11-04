@@ -1,0 +1,39 @@
+{
+  "kind": "singleType",
+  "collectionName": "abouts",
+  "info": {
+    "singularName": "about",
+    "pluralName": "abouts",
+    "displayName": "About"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "richtext"
+    },
+    "History": {
+      "type": "richtext"
+    },
+    "Our_Vision": {
+      "type": "richtext"
+    },
+    "Our_Mission": {
+      "type": "richtext"
+    },
+    "Our_Values": {
+      "type": "richtext"
+    },
+    "Our_Values_Items": {
+      "displayName": "Our_Values_Items",
+      "type": "component",
+      "repeatable": true,
+      "component": "our-values-items.our-values-items"
+    }
+  }
+}

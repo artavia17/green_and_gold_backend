@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_our_values_items_our_values_items",
+  "info": {
+    "displayName": "Our_Values_Items"
+  },
+  "options": {},
+  "attributes": {
+    "Icon": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "Title": {
+      "type": "string"
+    }
+  }
+}
