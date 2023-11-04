@@ -368,6 +368,7 @@ export interface ApiHomeSliderHomeSlider extends Schema.CollectionType {
     singularName: 'home-slider';
     pluralName: 'home-sliders';
     displayName: 'Home Slider';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -376,6 +377,7 @@ export interface ApiHomeSliderHomeSlider extends Schema.CollectionType {
     Background: Attribute.Media;
     Title: Attribute.String;
     Action: Attribute.Text;
+    Button: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

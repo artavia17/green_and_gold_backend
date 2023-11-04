@@ -4,7 +4,8 @@
   "info": {
     "singularName": "home-slider",
     "pluralName": "home-sliders",
-    "displayName": "Home Slider"
+    "displayName": "Home Slider",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -12,20 +13,24 @@
   "pluginOptions": {},
   "attributes": {
     "Background": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "Title": {
       "type": "string"
     },
     "Action": {
       "type": "text"
+    },
+    "Button": {
+      "type": "string"
     }
   }
 }
