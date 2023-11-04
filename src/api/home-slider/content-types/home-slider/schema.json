@@ -33,7 +33,8 @@
       "type": "string"
     },
     "Tab": {
-      "type": "boolean"
+      "type": "boolean",
+      "default": false
     }
   }
 }

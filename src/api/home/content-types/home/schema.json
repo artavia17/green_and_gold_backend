@@ -1,0 +1,52 @@
+{
+  "kind": "singleType",
+  "collectionName": "homes",
+  "info": {
+    "singularName": "home",
+    "pluralName": "homes",
+    "displayName": "Home",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Caring_For_Your_Home": {
+      "type": "string",
+      "required": true,
+      "private": true
+    },
+    "Caring_For_Your_Home_Content": {
+      "type": "richtext",
+      "required": true
+    },
+    "Caring_For_Your_Home_Slider": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Full_Management_Plus_Title": {
+      "type": "string",
+      "required": true
+    },
+    "Full_Management_Plus_Content": {
+      "type": "richtext",
+      "required": true
+    },
+    "Full_Management_Plus_Image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}
