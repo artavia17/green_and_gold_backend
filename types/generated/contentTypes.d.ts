@@ -378,6 +378,7 @@ export interface ApiHomeSliderHomeSlider extends Schema.CollectionType {
     Title: Attribute.String;
     Action: Attribute.Text;
     Button: Attribute.String;
+    Tab: Attribute.Boolean;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

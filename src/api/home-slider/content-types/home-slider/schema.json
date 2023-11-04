@@ -31,6 +31,9 @@
     },
     "Button": {
       "type": "string"
+    },
+    "Tab": {
+      "type": "boolean"
     }
   }
 }
