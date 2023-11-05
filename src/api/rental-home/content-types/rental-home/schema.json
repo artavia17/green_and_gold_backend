@@ -68,6 +68,13 @@
       "type": "component",
       "repeatable": true,
       "component": "unavailable.unavailable"
+    },
+    "Principal_Image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }
