@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_unavailable_unavailables",
+  "info": {
+    "displayName": "Unavailable"
+  },
+  "options": {},
+  "attributes": {
+    "Date": {
+      "type": "date"
+    }
+  }
+}

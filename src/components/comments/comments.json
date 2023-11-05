@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_comments_comments",
+  "info": {
+    "displayName": "Comments"
+  },
+  "options": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Starts": {
+      "type": "enumeration",
+      "enum": [
+        "One",
+        "Two",
+        "Three",
+        "Four",
+        "Five"
+      ]
+    },
+    "Comment": {
+      "type": "richtext"
+    }
+  }
+}

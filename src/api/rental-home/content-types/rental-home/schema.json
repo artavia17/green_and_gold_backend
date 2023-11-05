@@ -1,0 +1,73 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rental_homes",
+  "info": {
+    "singularName": "rental-home",
+    "pluralName": "rental-homes",
+    "displayName": "Rental_Home",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Beds": {
+      "type": "biginteger"
+    },
+    "Baths": {
+      "type": "biginteger"
+    },
+    "SQ_FT": {
+      "type": "biginteger"
+    },
+    "Bedrooms": {
+      "type": "biginteger"
+    },
+    "Bathrooms": {
+      "type": "biginteger"
+    },
+    "Floors": {
+      "type": "biginteger"
+    },
+    "Type_of_currency": {
+      "type": "enumeration",
+      "enum": [
+        "₡ - Colones",
+        "$ - Dolar"
+      ]
+    },
+    "Price": {
+      "type": "decimal"
+    },
+    "Slug": {
+      "type": "uid",
+      "targetField": "Title"
+    },
+    "Content": {
+      "type": "richtext"
+    },
+    "Images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Comments": {
+      "displayName": "Comments",
+      "type": "component",
+      "repeatable": true,
+      "component": "comments.comments"
+    },
+    "Unavailable": {
+      "type": "component",
+      "repeatable": true,
+      "component": "unavailable.unavailable"
+    }
+  }
+}

@@ -37,14 +37,21 @@
       "component": "our-values-items.our-values-items"
     },
     "Background": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "Unavailable": {
+      "displayName": "Unavailable",
+      "type": "component",
+      "repeatable": true,
+      "component": "unavailable.unavailable"
     }
   }
 }

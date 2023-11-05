@@ -700,6 +700,7 @@ export interface ApiAboutAbout extends Schema.SingleType {
       true
     >;
     Background: Attribute.Media;
+    Unavailable: Attribute.Component<'unavailable.unavailable', true>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -816,6 +817,50 @@ export interface ApiHomeSliderHomeSlider extends Schema.CollectionType {
   };
 }
 
+export interface ApiRentalHomeRentalHome extends Schema.CollectionType {
+  collectionName: 'rental_homes';
+  info: {
+    singularName: 'rental-home';
+    pluralName: 'rental-homes';
+    displayName: 'Rental_Home';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    Title: Attribute.String;
+    Beds: Attribute.BigInteger;
+    Baths: Attribute.BigInteger;
+    SQ_FT: Attribute.BigInteger;
+    Bedrooms: Attribute.BigInteger;
+    Bathrooms: Attribute.BigInteger;
+    Floors: Attribute.BigInteger;
+    Type_of_currency: Attribute.Enumeration<['\u20A1 - Colones', '$ - Dolar']>;
+    Price: Attribute.Decimal;
+    Slug: Attribute.UID<'api::rental-home.rental-home', 'Title'>;
+    Content: Attribute.RichText;
+    Images: Attribute.Media;
+    Comments: Attribute.Component<'comments.comments', true>;
+    Unavailable: Attribute.Component<'unavailable.unavailable', true>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::rental-home.rental-home',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::rental-home.rental-home',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiServiceService extends Schema.SingleType {
   collectionName: 'services';
   info: {
@@ -866,6 +911,7 @@ declare module '@strapi/types' {
       'api::footer.footer': ApiFooterFooter;
       'api::home.home': ApiHomeHome;
       'api::home-slider.home-slider': ApiHomeSliderHomeSlider;
+      'api::rental-home.rental-home': ApiRentalHomeRentalHome;
       'api::service.service': ApiServiceService;
     }
   }

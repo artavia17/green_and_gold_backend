@@ -13,6 +13,18 @@ export interface AllServicesAllServices extends Schema.Component {
   };
 }
 
+export interface CommentsComments extends Schema.Component {
+  collectionName: 'components_comments_comments';
+  info: {
+    displayName: 'Comments';
+  };
+  attributes: {
+    Name: Attribute.String;
+    Starts: Attribute.Enumeration<['One', 'Two', 'Three', 'Four', 'Five']>;
+    Comment: Attribute.RichText;
+  };
+}
+
 export interface OurValuesItemsOurValuesItems extends Schema.Component {
   collectionName: 'components_our_values_items_our_values_items';
   info: {
@@ -36,12 +48,24 @@ export interface PhonesPhones extends Schema.Component {
   };
 }
 
+export interface UnavailableUnavailable extends Schema.Component {
+  collectionName: 'components_unavailable_unavailables';
+  info: {
+    displayName: 'Unavailable';
+  };
+  attributes: {
+    Date: Attribute.Date;
+  };
+}
+
 declare module '@strapi/types' {
   export module Shared {
     export interface Components {
       'all-services.all-services': AllServicesAllServices;
+      'comments.comments': CommentsComments;
       'our-values-items.our-values-items': OurValuesItemsOurValuesItems;
       'phones.phones': PhonesPhones;
+      'unavailable.unavailable': UnavailableUnavailable;
     }
   }
 }
