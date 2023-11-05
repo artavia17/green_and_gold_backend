@@ -36,8 +36,8 @@
     "Type_of_currency": {
       "type": "enumeration",
       "enum": [
-        "₡ - Colones",
-        "$ - Dolar"
+        "Colones",
+        "Dólar"
       ]
     },
     "Price": {

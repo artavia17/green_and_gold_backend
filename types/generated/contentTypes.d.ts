@@ -836,7 +836,7 @@ export interface ApiRentalHomeRentalHome extends Schema.CollectionType {
     Bedrooms: Attribute.BigInteger;
     Bathrooms: Attribute.BigInteger;
     Floors: Attribute.BigInteger;
-    Type_of_currency: Attribute.Enumeration<['\u20A1 - Colones', '$ - Dolar']>;
+    Type_of_currency: Attribute.Enumeration<['Colones', 'D\u00F3lar']>;
     Price: Attribute.Decimal;
     Slug: Attribute.UID<'api::rental-home.rental-home', 'Title'>;
     Content: Attribute.RichText;
