@@ -25,6 +25,18 @@ export interface CommentsComments extends Schema.Component {
   };
 }
 
+export interface ExperienceExperience extends Schema.Component {
+  collectionName: 'components_experience_experiences';
+  info: {
+    displayName: 'Experience';
+    description: '';
+  };
+  attributes: {
+    Icon: Attribute.Media;
+    Content: Attribute.RichText;
+  };
+}
+
 export interface OurValuesItemsOurValuesItems extends Schema.Component {
   collectionName: 'components_our_values_items_our_values_items';
   info: {
@@ -63,6 +75,7 @@ declare module '@strapi/types' {
     export interface Components {
       'all-services.all-services': AllServicesAllServices;
       'comments.comments': CommentsComments;
+      'experience.experience': ExperienceExperience;
       'our-values-items.our-values-items': OurValuesItemsOurValuesItems;
       'phones.phones': PhonesPhones;
       'unavailable.unavailable': UnavailableUnavailable;

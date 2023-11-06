@@ -862,6 +862,39 @@ export interface ApiRentalHomeRentalHome extends Schema.CollectionType {
   };
 }
 
+export interface ApiRentalHomeExperienceRentalHomeExperience
+  extends Schema.SingleType {
+  collectionName: 'rental_home_experiences';
+  info: {
+    singularName: 'rental-home-experience';
+    pluralName: 'rental-home-experiences';
+    displayName: 'Rental_Home_Experience';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    Title: Attribute.String;
+    Experience: Attribute.Component<'experience.experience', true>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::rental-home-experience.rental-home-experience',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::rental-home-experience.rental-home-experience',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiServiceService extends Schema.SingleType {
   collectionName: 'services';
   info: {
@@ -913,6 +946,7 @@ declare module '@strapi/types' {
       'api::home.home': ApiHomeHome;
       'api::home-slider.home-slider': ApiHomeSliderHomeSlider;
       'api::rental-home.rental-home': ApiRentalHomeRentalHome;
+      'api::rental-home-experience.rental-home-experience': ApiRentalHomeExperienceRentalHomeExperience;
       'api::service.service': ApiServiceService;
     }
   }

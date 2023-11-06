@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "rental_home_experiences",
+  "info": {
+    "singularName": "rental-home-experience",
+    "pluralName": "rental-home-experiences",
+    "displayName": "Rental_Home_Experience",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Experience": {
+      "displayName": "Experience",
+      "type": "component",
+      "repeatable": true,
+      "component": "experience.experience"
+    }
+  }
+}
