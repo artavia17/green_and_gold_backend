@@ -844,6 +844,7 @@ export interface ApiRentalHomeRentalHome extends Schema.CollectionType {
     Comments: Attribute.Component<'comments.comments', true>;
     Unavailable: Attribute.Component<'unavailable.unavailable', true>;
     Principal_Image: Attribute.Media;
+    Meta_description: Attribute.Text & Attribute.Required;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

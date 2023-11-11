@@ -70,11 +70,16 @@
       "component": "unavailable.unavailable"
     },
     "Principal_Image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "Meta_description": {
+      "type": "text",
+      "required": true
     }
   }
 }
